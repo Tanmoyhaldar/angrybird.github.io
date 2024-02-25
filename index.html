@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Section styles */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Heading styles */
+        h3 {
+            margin-top: 0;
+        }
+
+        /* Message button styles */
+        .message-btn {
+            background-color: #27ae60;
+        }
+
+        .message-btn:hover {
+            background-color: #219653;
+        }
+
+        /* Hidden class to hide elements */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("haan").addEventListener("click", function () {
+                alert("😭😭😭😭😭😭");
+                document.querySelector(".first").classList.add("hidden");
+                document.querySelector(".second-one").classList.remove("hidden");
+            });
+
+            document.getElementById("thodaSa").addEventListener("click", function () {
+                alert("😢😢😢😢😢😢")
+                document.querySelector(".first").classList.add("hidden");
+                document.querySelector(".second-two").classList.remove("hidden");
+            });
+
+            document.getElementById("bilkulNahi").addEventListener("click", function () {
+                alert("❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️")
+                document.querySelector(".first").classList.add("hidden");
+                document.querySelector(".second-three").classList.remove("hidden");
+            });
+
+            const messageButtons = document.querySelectorAll(".message-btn");
+            // messageButtons.forEach(button => {
+            //     button.addEventListener("click", function() {
+            //         const phoneNumber = this.getAttribute("data-number");
+            //         window.location.href = `https://wa.me/${phoneNumber}?text=Hello%20from%20your%20website!`;
+            //     });
+            // });
+        });
+
+
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="first">
+        <h3>Baby mujhpe gussa ho?</h3>
+        <button id="haan">Haan</button>
+        <button id="thodaSa">Thoda Sa</button>
+        <button id="bilkulNahi">Bilkul Nahi</button>
+    </div>
+    <div class="second-one hidden">
+        <h3>par baby mai toh apka baby hu na pyaara sa, mujhpe kyu gussa ho?</h3>
+        <h5>Please message me sweetuuuuu... my cutuuuu...</h5>
+        <!-- <button id="message1" data-number="8018414128">Click to message me</button> -->
+    </div>
+    <div class="second-two hidden">
+        <h3>baby maine toh kuch kiya hi nahi... aap apne baby p gussa mat karo na please</h3>
+        <h5>You know na baby how much I love you...</h5>
+        <!-- <button id="message2" data-number="8018414128">Click to message me</button> -->
+    </div>
+    <div class="second-three hidden">
+        <h3>I love you more than my life itself my pretty pretty princess</h3>
+        <!-- <button id="message3" data-number="8018414128">Click to message me</button> -->
+    </div>
+</body>
+
+</html>
